@@ -13,7 +13,7 @@ function troncIt() {
                 var replacedText = text.replace(/(mr\. )?(trump|donald.*trump)/gi, 'Tronc');
 
                 if (replacedText !== text) {
-                    element.replaceChild(document.createTextNode(replacedText), node);
+                    node.nodeValue = replacedText;
                 }
             }
         }
